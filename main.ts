@@ -16,15 +16,14 @@ function backbackback海道 () {
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 8) {
         gogo宜得利()
-    }
-    if (receivedNumber == 2) {
+    } else if (receivedNumber == 2) {
         backbackback海道()
-    }
-    if (receivedNumber == 4) {
+    } else if (receivedNumber == 4) {
         left旅遊啪啪造()
-    }
-    if (receivedNumber == 6) {
+    } else if (receivedNumber == 6) {
         rightnow過年要破產()
+    } else {
+    	
     }
 })
 function left旅遊啪啪造 () {
