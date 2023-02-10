@@ -1,5 +1,5 @@
 function backbackback海道 () {
-    pwm = 150
+    pwm = 200
     sensors.DDMmotor(
     AnalogPin.P13,
     1,
@@ -114,7 +114,7 @@ function rightnow過年要破產 () {
     )
 }
 function gogo宜得利 () {
-    pwm = 150
+    pwm = 200
     sensors.DDMmotor(
     AnalogPin.P13,
     0,
