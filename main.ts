@@ -23,7 +23,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (receivedNumber == 6) {
         rightnow過年要破產()
     } else {
-    	
+        stopstopyourdangerousthing()
     }
 })
 function left旅遊啪啪造 () {
@@ -42,6 +42,20 @@ function left旅遊啪啪造 () {
     1,
     AnalogPin.P16,
     pwm
+    )
+}
+function stopstopyourdangerousthing () {
+    sensors.DDMmotor(
+    AnalogPin.P13,
+    0,
+    AnalogPin.P14,
+    0
+    )
+    sensors.DDMmotor(
+    AnalogPin.P15,
+    0,
+    AnalogPin.P16,
+    0
     )
 }
 function rightnow過年要破產 () {
