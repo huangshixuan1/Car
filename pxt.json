@@ -1,5 +1,5 @@
 {
-    "name": "copy",
+    "name": "CarReceive",
     "description": "",
     "dependencies": {
         "core": "*",
