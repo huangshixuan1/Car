@@ -86,7 +86,7 @@ function gogo宜得利 () {
     )
     sensors.DDMmotor(
     AnalogPin.P15,
-    0,
+    1,
     AnalogPin.P16,
     100
     )
