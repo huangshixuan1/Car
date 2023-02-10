@@ -67,7 +67,7 @@ radio.onReceivedNumber(function (receivedNumber) {
             `)
         basic.pause(100)
         basic.clearScreen()
-    } else {
+    } else if (receivedNumber == 0) {
         stopstopyourdangerousthing()
         basic.showLeds(`
             . # # # .
