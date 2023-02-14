@@ -63,6 +63,9 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.clearScreen()
     }
 })
+function assistantreverse2 () {
+    pins.servoWritePin(AnalogPin.P7, 0)
+}
 function left旅遊啪啪造 () {
     pwm += 30
     if (pwm >= 255) {
@@ -112,6 +115,9 @@ function rightnow過年要破產 () {
     AnalogPin.P16,
     pwm - 30
     )
+}
+function assistantverse () {
+    pins.servoWritePin(AnalogPin.P7, 180)
 }
 function gogo宜得利 () {
     pwm = 250
