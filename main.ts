@@ -68,7 +68,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 function 開9右邊 () {
-    pins.servoWritePin(AnalogPin.P7, 180)
+    pins.servoWritePin(AnalogPin.P1, 180)
 }
 function left旅遊啪啪造 () {
     pwm += 30
@@ -103,7 +103,7 @@ function stopstopyourdangerousthing () {
     )
 }
 function 關7左邊 () {
-    pins.servoWritePin(AnalogPin.P7, 0)
+    pins.servoWritePin(AnalogPin.P1, 0)
 }
 function rightnow過年要破產 () {
     pwm += 30
