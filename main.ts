@@ -88,6 +88,12 @@ function left旅遊啪啪造 () {
     pwm
     )
 }
+function IntelliControl2 () {
+    開9右邊()
+    backbackback海道()
+    basic.pause(500)
+    stopstopyourdangerousthing()
+}
 function stopstopyourdangerousthing () {
     sensors.DDMmotor(
     AnalogPin.P13,
@@ -104,6 +110,12 @@ function stopstopyourdangerousthing () {
 }
 function 關7左邊 () {
     pins.servoWritePin(AnalogPin.P1, 0)
+}
+function IntelliControl1 () {
+    關7左邊()
+    backbackback海道()
+    basic.pause(500)
+    stopstopyourdangerousthing()
 }
 function rightnow過年要破產 () {
     pwm += 30
