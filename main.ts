@@ -63,8 +63,8 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.clearScreen()
     }
 })
-function assistantreverse2 () {
-    pins.servoWritePin(AnalogPin.P7, 0)
+function 開9右邊 () {
+    pins.servoWritePin(AnalogPin.P7, 180)
 }
 function left旅遊啪啪造 () {
     pwm += 30
@@ -75,7 +75,7 @@ function left旅遊啪啪造 () {
     AnalogPin.P13,
     1,
     AnalogPin.P14,
-    pwm - 30
+    pwm - 50
     )
     sensors.DDMmotor(
     AnalogPin.P15,
@@ -98,6 +98,9 @@ function stopstopyourdangerousthing () {
     0
     )
 }
+function 關7左邊 () {
+    pins.servoWritePin(AnalogPin.P7, 0)
+}
 function rightnow過年要破產 () {
     pwm += 30
     if (pwm >= 255) {
@@ -113,11 +116,8 @@ function rightnow過年要破產 () {
     AnalogPin.P15,
     0,
     AnalogPin.P16,
-    pwm - 30
+    pwm - 50
     )
-}
-function assistantverse () {
-    pins.servoWritePin(AnalogPin.P7, 180)
 }
 function gogo宜得利 () {
     pwm = 250
@@ -135,4 +135,4 @@ function gogo宜得利 () {
     )
 }
 let pwm = 0
-radio.setGroup(200)
+radio.setGroup(171)
