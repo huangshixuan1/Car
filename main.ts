@@ -61,6 +61,10 @@ radio.onReceivedNumber(function (receivedNumber) {
     } else if (receivedNumber == 0) {
         stopstopyourdangerousthing()
         basic.clearScreen()
+    } else if (receivedNumber == 9) {
+        開9右邊()
+    } else if (receivedNumber == 7) {
+        關7左邊()
     }
 })
 function 開9右邊 () {
