@@ -62,31 +62,34 @@ radio.onReceivedNumber(function (receivedNumber) {
         stopstopyourdangerousthing()
         basic.clearScreen()
     } else if (receivedNumber == 9) {
-        開9右邊()
+        開9右邊R()
         basic.showLeds(`
-            . . # . .
-            . # . # .
-            . # # # .
-            . . . # .
             . # # . .
+            . # . # .
+            . # # . .
+            . # . # .
+            . # . # .
             `)
         basic.pause(50)
         basic.clearScreen()
     } else if (receivedNumber == 7) {
-        關7左邊()
+        關7左邊L()
         basic.showLeds(`
+            . # . . .
+            . # . . .
+            . # . . .
+            . # . . .
             . # # # .
-            . . . # .
-            . . # . .
-            . . # . .
-            . . # . .
             `)
         basic.pause(50)
         basic.clearScreen()
     }
 })
-function 開9右邊 () {
+function 開9右邊R () {
     pins.servoWritePin(AnalogPin.P1, 40)
+}
+function 關7左邊L () {
+    pins.servoWritePin(AnalogPin.P1, 0)
 }
 function left旅遊啪啪造 () {
     pwm += 30
@@ -106,12 +109,6 @@ function left旅遊啪啪造 () {
     pwm
     )
 }
-function IntelliControl2 () {
-    開9右邊()
-    backbackback海道()
-    basic.pause(500)
-    stopstopyourdangerousthing()
-}
 function stopstopyourdangerousthing () {
     sensors.DDMmotor(
     AnalogPin.P13,
@@ -125,15 +122,6 @@ function stopstopyourdangerousthing () {
     AnalogPin.P16,
     0
     )
-}
-function 關7左邊 () {
-    pins.servoWritePin(AnalogPin.P1, 0)
-}
-function IntelliControl1 () {
-    關7左邊()
-    backbackback海道()
-    basic.pause(500)
-    stopstopyourdangerousthing()
 }
 function rightnow過年要破產 () {
     pwm += 30
