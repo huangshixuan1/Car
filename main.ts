@@ -70,6 +70,8 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . . # .
             . # # . .
             `)
+        basic.pause(50)
+        basic.clearScreen()
     } else if (receivedNumber == 7) {
         關7左邊()
         basic.showLeds(`
@@ -79,10 +81,12 @@ radio.onReceivedNumber(function (receivedNumber) {
             . . # . .
             . . # . .
             `)
+        basic.pause(50)
+        basic.clearScreen()
     }
 })
 function 開9右邊 () {
-    pins.servoWritePin(AnalogPin.P1, 80)
+    pins.servoWritePin(AnalogPin.P1, 40)
 }
 function left旅遊啪啪造 () {
     pwm += 30
