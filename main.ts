@@ -63,12 +63,26 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.clearScreen()
     } else if (receivedNumber == 9) {
         開9右邊()
+        basic.showLeds(`
+            . . # . .
+            . # . # .
+            . # # # .
+            . . . # .
+            . # # . .
+            `)
     } else if (receivedNumber == 7) {
         關7左邊()
+        basic.showLeds(`
+            . # # # .
+            . . . # .
+            . . # . .
+            . . # . .
+            . . # . .
+            `)
     }
 })
 function 開9右邊 () {
-    pins.servoWritePin(AnalogPin.P1, 180)
+    pins.servoWritePin(AnalogPin.P1, 80)
 }
 function left旅遊啪啪造 () {
     pwm += 30
@@ -79,7 +93,7 @@ function left旅遊啪啪造 () {
     AnalogPin.P13,
     1,
     AnalogPin.P14,
-    pwm - 50
+    50
     )
     sensors.DDMmotor(
     AnalogPin.P15,
@@ -132,7 +146,7 @@ function rightnow過年要破產 () {
     AnalogPin.P15,
     0,
     AnalogPin.P16,
-    pwm - 50
+    50
     )
 }
 function gogo宜得利 () {
