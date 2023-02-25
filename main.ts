@@ -16,46 +16,18 @@ function backbackback海道 () {
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber == 8) {
         gogo宜得利()
-        basic.showLeds(`
-            . . # . .
-            . # # # .
-            # . # . #
-            . . # . .
-            . . # . .
-            `)
         basic.pause(50)
         basic.clearScreen()
     } else if (receivedNumber == 2) {
         backbackback海道()
-        basic.showLeds(`
-            . . # . .
-            . . # . .
-            # . # . #
-            . # # # .
-            . . # . .
-            `)
         basic.pause(50)
         basic.clearScreen()
     } else if (receivedNumber == 4) {
         left旅遊啪啪造()
-        basic.showLeds(`
-            . . # . .
-            . # . . .
-            # # # # #
-            . # . . .
-            . . # . .
-            `)
         basic.pause(50)
         basic.clearScreen()
     } else if (receivedNumber == 6) {
         rightnow過年要破產()
-        basic.showLeds(`
-            . . # . .
-            . . . # .
-            # # # # #
-            . . . # .
-            . . # . .
-            `)
         basic.pause(50)
         basic.clearScreen()
     } else if (receivedNumber == 0) {
@@ -63,24 +35,10 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.clearScreen()
     } else if (receivedNumber == 9) {
         開9右邊R()
-        basic.showLeds(`
-            . # # . .
-            . # . # .
-            . # # . .
-            . # . # .
-            . # . # .
-            `)
         basic.pause(50)
         basic.clearScreen()
     } else if (receivedNumber == 7) {
         關7左邊L()
-        basic.showLeds(`
-            . # . . .
-            . # . . .
-            . # . . .
-            . # . . .
-            . # # # .
-            `)
         basic.pause(50)
         basic.clearScreen()
     }
@@ -157,4 +115,4 @@ function gogo宜得利 () {
     )
 }
 let pwm = 0
-radio.setGroup(171)
+radio.setGroup(172)
