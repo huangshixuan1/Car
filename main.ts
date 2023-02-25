@@ -4,13 +4,13 @@ function backbackback海道 () {
     AnalogPin.P13,
     1,
     AnalogPin.P14,
-    100
+    pwm
     )
     sensors.DDMmotor(
     AnalogPin.P15,
     0,
     AnalogPin.P16,
-    100
+    pwm
     )
 }
 radio.onReceivedNumber(function (receivedNumber) {
@@ -147,13 +147,13 @@ function gogo宜得利 () {
     AnalogPin.P13,
     0,
     AnalogPin.P14,
-    100
+    pwm
     )
     sensors.DDMmotor(
     AnalogPin.P15,
     1,
     AnalogPin.P16,
-    100
+    pwm
     )
 }
 let pwm = 0
